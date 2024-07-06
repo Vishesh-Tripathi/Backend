@@ -2,14 +2,21 @@
   "name": "chai-aur-backend",
   "version": "1.0.0",
   "description": "backend",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devt": "nodemon src/index.js"
   },
   "keywords": [
     "chai",
     "backened"
   ],
   "author": "Vishesh TRipathi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "prettier": "^3.3.2"
+  }
 }
