@@ -57,7 +57,7 @@ userSchema.pre("save", async function (next){
     // ab problem ye h ki ye hamesh run hoga chahe password change ho ya avatar ya kuch bhi attributes 
     //to we use if else
     if(this.isModified("password")){
-        this.password = bcrypt.hash(this.password,10)
+        this.password = await bcrypt.hash(this.password,10)
         next()
     }else{
         return next()
